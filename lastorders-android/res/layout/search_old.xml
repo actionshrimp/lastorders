@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="fill_parent">
+    <LinearLayout android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/LinearLayout01" android:layout_width="fill_parent"></LinearLayout>
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/app_name"
+	    android:textSize="35sp"
+	    android:textColor="#FF9C00"
+	    android:textStyle="bold"
+	    android:gravity="center" android:layout_weight="2" android:layout_marginLeft="15dip" android:layout_marginRight="15dip" android:layout_marginTop="15dip"/>
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="Select the kind of venues you're interested in:"
+	    android:textSize="16sp"
+	    android:textColor="#FFC973"
+	    android:textStyle="bold"
+	    android:gravity="center" android:layout_weight="2" android:layout_margin="15dip"/>
+	<LinearLayout 
+		android:id="@+id/toggleLayout" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:padding="10dip"
+		android:layout_weight="2">
+		<ToggleButton 
+			android:text="Pubs" 
+			android:id="@+id/togglePubs"
+			android:textOn="Pubs"
+			android:textOff="Pubs" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"/>
+		<ToggleButton 
+			android:text="Bars" 
+			android:id="@+id/toggleBars" 
+			android:textOn="Bars"
+			android:textOff="Bars" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"/>
+		<ToggleButton 
+			android:text="Clubs" 
+			android:id="@+id/toggleClubs" 
+			android:textOn="Clubs"
+			android:textOff="Clubs" android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent"/>
+	</LinearLayout>
+	<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1"/>
+	<LinearLayout android:layout_height="wrap_content" android:id="@+id/searchButtonLayout" android:layout_width="fill_parent" android:layout_weight="2">
+		<TextView android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_width="wrap_content" android:text=""/>
+		<Button 
+			android:layout_height="fill_parent" 
+			android:layout_width="wrap_content"
+			android:id="@+id/buttonSearch" 
+			android:layout_gravity="center_horizontal" 
+			android:text="Search" 
+			android:layout_weight="2.0"
+			android:onClick="performSearch"/>
+		<TextView android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_width="wrap_content" android:text=""/>
+	</LinearLayout>
+	<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1"/>
+</LinearLayout>
