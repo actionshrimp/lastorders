@@ -15,7 +15,8 @@ class LateLondonDrinksXMLRPC(xmlrpc.XMLRPC):
 			if current_day == 0:
 				current_day = 7
 
-			#Again extract credentials out
+			#Again extract credentials out, and save it from the wide SQL injection holes.
+			#This was hacked together quickly for local testing!
 			db = mysql.connect(host='localhost', user='lld', passwd='PASSWORD', db='latelondondrinks')
 			query = '''SELECT 
 				venue.id, 
